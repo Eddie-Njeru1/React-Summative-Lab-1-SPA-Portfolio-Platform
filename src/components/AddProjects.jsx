@@ -29,6 +29,8 @@ function AddProject() {
             onChange={(e) => setDescription(e.target.value)}
             />
 
+            <button type="submit">Submit Project</button>
+
         </form>
     )
 };
