@@ -6,15 +6,18 @@ import SearchProjects from "./components/SearchProjects";
 // import useState hook to manage the states of the components
 import { useState } from "react";
 
-function App() {
+function App() { //Variables to be passed down as props to child components
   const [projects, setProjects] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  
+  
 
   return (
     <div>
       <h1>Personal Project Showcase App</h1>
       <AddProjects/>
-      <ProjectLists/>
-      <SearchProjects/>
+      <ProjectsList projects={projects}/>
+      <SearchProjects onSearch={setSearchTerm}/>
     </div>
   );
 };

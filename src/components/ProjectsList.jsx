@@ -1,7 +1,7 @@
 import React from "react";
-import {useState} from "react";
 
-function ProjectsList({ projects }) {
+// Function to pass array in app component as prop
+function ProjectsList({projects}) {
     return (
         <div>
             {projects.map((project) => (
@@ -12,6 +12,6 @@ function ProjectsList({ projects }) {
             ))}
         </div>
     );
-}
+};
 
 export default ProjectsList;

@@ -7,6 +7,7 @@ function AddProjects() {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
 
+
     const handleSubmit = (e) => {
         e.preventDefault(); //Prevents refreshing the page
     }
