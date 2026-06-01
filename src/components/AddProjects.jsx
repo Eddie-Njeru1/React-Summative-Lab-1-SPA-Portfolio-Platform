@@ -3,7 +3,7 @@ import React from "react";
 import {useState} from "react";
 
 // Handle the state of each input section
-function AddProject() {
+function AddProjects() {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
 
@@ -32,7 +32,7 @@ function AddProject() {
             <button type="submit">Submit Project</button>
 
         </form>
-    )
+    );
 };
 
-export default AddProject;
+export default AddProjects;
