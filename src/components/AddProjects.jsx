@@ -15,7 +15,7 @@ function AddProjects() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <TextField
+            <TextField //Material ui styling structure
             label="Title"
             type="text"
             placeholder="Type Title Here"
