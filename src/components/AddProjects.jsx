@@ -1,3 +1,4 @@
+import { TextField, Button } from "@mui/material"; //styling using material ui
 import React from "react";
 // import useState hook to manage the state of this component
 import {useState} from "react";
@@ -14,23 +15,23 @@ function AddProjects() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input
-            id="title"
+            <TextField
+            label="Title"
             type="text"
-            placeholder="Type here"
+            placeholder="Type Title Here"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             />
 
-            <input
-            id="description"
+            <TextField
+            label="Description"
             type="text"
-            placeholder="Type here"
+            placeholder="Type Description Here"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             />
 
-            <button type="submit">Submit Project</button>
+            <Button variant="contained" type="submit">Submit Project</Button>
 
         </form>
     );

@@ -1,16 +1,88 @@
-# React + Vite
+# Personal Project Showcase App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Single Page Application (SPA) built with React that lets a creative agency display their projects, add new ones, and search through them.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What it does
 
-## React Compiler
+- Shows a list of projects on the main page
+- Has a form where you can add a new project (title + description)
+- Has a search bar to filter through projects
+- Styled using Material UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tools used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (set up with Vite)
+- JavaScript
+- Material UI for styling
+
+---
+
+## How to run it
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Eddie-Njeru1/React-Summative-Lab-1-SPA-Portfolio-Platform.git
+   cd React-Summative-Lab-1-SPA-Portfolio-Platform
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Install Material UI (if not already):
+   ```bash
+   npm install @mui/material @emotion/react @emotion/styled
+   ```
+
+4. Start the app:
+   ```bash
+   npm run dev
+   ```
+
+5. Open `http://localhost:5173` in your browser
+
+---
+
+## How to use it
+
+- When the app loads you'll see the project list (empty at first)
+- Fill in the Title and Description fields and hit "Submit Project" to add one
+- Type in the search bar to filter projects
+
+---
+
+## Project structure
+
+```
+src/
+├── components/
+│   ├── AddProjects.jsx       # The form for adding projects
+│   ├── ProjectsList.jsx      # Displays all the projects
+│   └── SearchProjects.jsx    # The search input
+├── App.jsx                   # Main component, holds all the state
+└── main.jsx                  # Entry point
+```
+
+---
+
+## Known issues / limitations
+
+- Projects disappear when you refresh the page — there's no database or local storage hooked up yet
+
+---
+
+## What I'd improve with more time
+
+- Save projects to local storage so they don't disappear on refresh
+
+
+---
+
+## Author
+
+Eddie Njeru
