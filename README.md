@@ -18,6 +18,7 @@ This is a Single Page Application (SPA) built with React that lets a creative ag
 - React (set up with Vite)
 - JavaScript
 - Material UI for styling
+- Deployed on Vercel 
 
 ---
 
