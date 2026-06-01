@@ -1,7 +1,7 @@
 // Import the child components into the parent App which will pass down data as props.
 import React from "react";
 import AddProjects from "./components/AddProjects";
-import ProjectsLists from "./components/ProjectsList";
+import ProjectsList from "./components/ProjectsList";
 import SearchProjects from "./components/SearchProjects";
 // import useState hook to manage the states of the components
 import { useState } from "react";
